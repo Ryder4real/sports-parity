@@ -5,5 +5,5 @@ I worked with Daniel Rashes to try and answer this question. We used Markov Chai
 
 I go into the project in much more detail at: https://www.ryderfried.com/projects
 
-Here is a graph that overviews results.
+Here is a graph that overviews results:
 ![Sports Parity Comparison](plots/comparison_plot.png)
