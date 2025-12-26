@@ -97,11 +97,13 @@ comp_plot <- ggplot(df_long, aes(x = Power, y = RowSum, color = Matrix)) +
   geom_line(size = 1.2) +
   geom_point() +
   theme_minimal() +
-  labs(title = "% of Going from Bottom Tier to Having an Above Average Team within X Years", x = "Years", y = "% Chance")
+  labs(title = "% Chance of Going from Bottom Tier to Having an Above Average Team within X Years", x = "Years", y = "% Chance")
 
 ggsave(here("plots", "comparison_plot.png"), 
        plot=comp_plot,
-       bg = "white")
+       bg = "white",
+       width = 10,
+       height = 6,)
 
 df_edited = subset(df, select=-Power)
 # Convert row names into a column named "Years"
