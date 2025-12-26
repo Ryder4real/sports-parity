@@ -103,7 +103,7 @@ ggsave(here("plots", "comparison_plot.png"),
        plot=comp_plot,
        bg = "white",
        width = 10,
-       height = 6,)
+       height = 6)
 
 df_edited = subset(df, select=-Power)
 # Convert row names into a column named "Years"
