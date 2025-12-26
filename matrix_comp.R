@@ -102,8 +102,8 @@ comp_plot <- ggplot(df_long, aes(x = Power, y = RowSum, color = Matrix)) +
 ggsave(here("plots", "comparison_plot.png"), 
        plot=comp_plot,
        bg = "white",
-       width = 10,
-       height = 6)
+       width = 12,
+       height = 5)
 
 df_edited = subset(df, select=-Power)
 # Convert row names into a column named "Years"
